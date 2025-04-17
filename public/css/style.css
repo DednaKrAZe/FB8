@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    background: #f5f5f5;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .filter-btn.active {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .todo-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+  }
+  
+  #add-btn {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #todo-list {
+    list-style: none;
+  }
+  
+  #todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  #todo-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #todo-list input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #todo-list span {
+    flex: 1;
+  }
+  
+  #todo-list span.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .delete-btn {
+    background: #ff5252;
+    color: white;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .empty-message {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+  }
+  
+  .notification-controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #enable-notifications {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+    
+    .filters {
+      flex-direction: column;
+    }
+    
+    .filter-btn {
+      margin: 5px 0;
+    }
+  }
